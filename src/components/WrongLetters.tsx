@@ -7,10 +7,7 @@ export default function WrongLetters({ wrongLetters }: Props) {
     <div className="wrong-letters-container">
       <div>
         {wrongLetters.length > 0 && <p>Wrong</p>}
-        {wrongLetters.length > 0 && <span>{wrongLetters}</span>}
-        {/* {wrongLetters.map((letter, idx) => (
-          <span key={idx}>{letter}</span>
-        ))} */}
+        {wrongLetters.length > 0 && <span>{wrongLetters.join(",")}</span>}
       </div>
     </div>
   );

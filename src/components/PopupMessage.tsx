@@ -1,12 +1,6 @@
 import { Dispatch, SetStateAction, useEffect } from "react";
 import { checkWin } from "../utils";
 
-// type Props = {
-//   message: string;
-//   status: "Win" | "Lost" | "";
-//   word: string;
-// };
-
 type Props = {
   question: string;
   correctLetters: string[];
